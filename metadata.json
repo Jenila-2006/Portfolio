@@ -1,0 +1,6 @@
+{
+  "name": "Ocean Portfolio",
+  "description": "A professional and elegant ocean exploration-themed personal portfolio website for Voonna Jenila.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
