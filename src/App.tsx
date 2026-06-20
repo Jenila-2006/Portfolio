@@ -16,11 +16,33 @@ import AchievementsSection from './components/AchievementsSection';
 import ContactSection from './components/ContactSection';
 import Chatbot from './components/Chatbot';
 import { WaveDivider } from './components/OceanIcons';
-import { Compass } from 'lucide-react';
+import { Compass, Sun, Moon } from 'lucide-react';
 
 export default function App() {
+  const [theme, setTheme] = React.useState<'dark' | 'light'>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('portfolio-theme');
+      if (saved === 'light') return 'light';
+    }
+    return 'dark';
+  });
+
+  React.useEffect(() => {
+    const root = window.document.documentElement;
+    if (theme === 'light') {
+      root.classList.add('light');
+    } else {
+      root.classList.remove('light');
+    }
+    localStorage.setItem('portfolio-theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  };
+
   return (
-    <div className="relative min-h-screen bg-[#020815] text-white selection:bg-[#00f2fe]/30 selection:text-[#00f2fe] overflow-x-hidden">
+    <div className="relative min-h-screen bg-ocean-dark text-pearl-white selection:bg-[#00f2fe]/30 selection:text-[#00f2fe] overflow-x-hidden transition-colors duration-500">
       {/* 1. Interactive Ocean Animated Atmosphere background */}
       <OceanBackground />
 
@@ -58,7 +80,7 @@ export default function App() {
       </main>
 
       {/* 4. Elegant Underwater Footer */}
-      <footer className="relative bg-[#010610] border-t border-white/5 py-12 text-center text-gray-500 z-10 font-mono text-xs">
+      <footer className="relative bg-ocean-dark/95 border-t border-white/5 py-12 text-center text-gray-500 z-10 font-mono text-xs">
         <div className="container mx-auto px-6 space-y-4">
           <div className="flex items-center justify-center gap-2 text-transparent bg-clip-text bg-gradient-to-r from-[#00f2fe] via-[#06b6d4] to-white font-medium animate-pulse">
             <Compass className="w-4 h-4 text-cyan-400" />
@@ -80,6 +102,32 @@ export default function App() {
 
       {/* 5. Charming Floating Mermaid Companion AI */}
       <Chatbot />
+
+      {/* 6. Theme Toggle Floating Captain Deck */}
+      <div className="fixed bottom-6 left-6 z-50">
+        <button
+          id="theme-surface-toggle"
+          onClick={toggleTheme}
+          aria-label="Toggle Marine Atmosphere"
+          className="group relative flex items-center justify-center p-3.5 rounded-full bg-white/5 border border-white/10 text-cyan-400 hover:text-white hover:border-cyan-400/40 hover:bg-white/10 transition-all duration-300 shadow-[0_4px_20px_rgba(2,11,24,0.4)] backdrop-blur-md cursor-pointer hover:scale-110 active:scale-95"
+        >
+          {/* Pulsing sea ring */}
+          <span className="absolute inset-0 rounded-full bg-cyan-400/10 pointer-events-none group-hover:scale-125 transition-transform duration-300" />
+          
+          <div className="relative w-6 h-6 flex items-center justify-center font-sans">
+            {theme === 'dark' ? (
+              <Sun className="w-5 h-5 text-amber-400 transition-transform duration-500 rotate-0 group-hover:rotate-45" />
+            ) : (
+              <Moon className="w-5 h-5 text-cyan-600 transition-transform duration-500 rotate-0 group-hover:-rotate-12" />
+            )}
+          </div>
+          
+          {/* Tooltip badge */}
+          <span className="absolute left-full ml-3 px-2 py-1 rounded bg-ocean-dark border border-white/10 text-[10px] font-mono text-gray-400 whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-300 shadow-md">
+            {theme === 'dark' ? 'Rise to Surface (Light Mode)' : 'Dive to Deep Ocean (Dark Mode)'}
+          </span>
+        </button>
+      </div>
     </div>
   );
 }

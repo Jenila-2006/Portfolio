@@ -12,7 +12,7 @@ export const initialProjects: Project[] = [
       'High-precision sign recognition',
       'Smart sentence-building prediction'
     ],
-    gitHubUrl: 'https://github.com/jenilavoonna/ai-sign-language-translator',
+    gitHubUrl: 'https://github.com/Jenila-2006/ai-sign-language-translator',
     imageUrl: 'sign_language_translator' // custom placeholder name or we can render beautifully themed icons/styles!
   },
   {
@@ -26,7 +26,7 @@ export const initialProjects: Project[] = [
       'Interactive roadmaps',
       'Centralized resources'
     ],
-    gitHubUrl: 'https://github.com/jenilavoonna/career-recommendation-platform',
+    gitHubUrl: 'https://github.com/Jenila-2006/career-recommendation-platform',
     imageUrl: 'career_recommendation'
   },
   {
@@ -40,7 +40,7 @@ export const initialProjects: Project[] = [
       'Interactive coding practice cheatsheets',
       'Year-wise previous question vault'
     ],
-    gitHubUrl: 'https://github.com/jenilavoonna/academic-toolbox',
+    gitHubUrl: 'https://github.com/Jenila-2006/academic-toolbox',
     imageUrl: 'academic_toolbox'
   }
 ];
@@ -78,8 +78,8 @@ export const initialSkills: Skill[] = [
 export const experiences: Experience[] = [
   {
     role: 'AI/ML Internship',
-    company: 'Artificial Intelligence Research Lab',
-    period: '2025 - Present',
+    company: 'Datavalley',
+    period: '05/2025 – 07/2025',
     description: 'Working hands-on with Machine Learning pipelines and state-of-the-art AI foundations. Built real-world models for sequence prediction and data refinement layers.',
     milestones: [
       'Trained high-accuracy classification models',
@@ -90,7 +90,7 @@ export const experiences: Experience[] = [
   {
     role: 'AI/ML Internship',
     company: 'NDV Tech Sys',
-    period: 'Summer 2024 (3 Months)',
+    period: '06/2025 – 08/2025',
     description: 'Developed and optimized production-grade AI/ML pipelines and web features. Integrated custom predictive modeling layers in Java/Spring Boot and crafted interactive React dashboards to display model predictions and evaluation statistics.',
     milestones: [
       'Refactored analytical query indexes to optimize AI model input loading, reducing server query latency by 30%',
@@ -104,7 +104,7 @@ export const experiences: Experience[] = [
 export const certifications: Certification[] = [
   {
     title: 'Python for Data Science',
-    issuer: 'IBM Academic Alliance',
+    issuer: 'NPTEL',
     year: '2024',
     glowingBadgeColor: 'shadow-aqua-blue/40 border-aqua-blue/50 text-aqua-blue'
   },
@@ -115,8 +115,8 @@ export const certifications: Certification[] = [
     glowingBadgeColor: 'shadow-treasure-gold/40 border-treasure-gold/50 text-treasure-gold'
   },
   {
-    title: 'AI Fundamentals & Ethics',
-    issuer: 'Google Cloud Platform',
+    title: 'Fundamentals of AI',
+    issuer: 'Future Skills Prime (Accenture)',
     year: '2025',
     glowingBadgeColor: 'shadow-crystal-cyan/40 border-crystal-cyan/50 text-crystal-cyan'
   },

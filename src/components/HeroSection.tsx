@@ -13,8 +13,8 @@ export default function HeroSection() {
                       VOONNA JENILA - RESUME
 ========================================================================
 Contact: jenilavoonna@gmail.com
-LinkedIn: linkedin.com/in/voonna-jenila
-GitHub: github.com/jenilavoonna
+LinkedIn: linkedin.com/in/jenila-voonna-7251482b8/
+GitHub: github.com/Jenila-2006
 Operational Base: 12°N Latitude
 
 ------------------------------------------------------------------------
@@ -42,12 +42,12 @@ TECHNICAL SKILLS
 ------------------------------------------------------------------------
 EXPERIENCE VOYAGES
 ------------------------------------------------------------------------
-1. AI/ML Internship @ Artificial Intelligence Research Lab (2025 - Present)
+1. AI/ML Internship @ Datavalley (05/2025 – 07/2025)
    - Trained high-accuracy classification models.
    - Refined Computer Vision gesture analysis matrices.
    - Configured automated dataset preprocessing workflows.
 
-2. AI/ML Internship @ NDV Tech Sys (Summer 2024)
+2. AI/ML Internship @ NDV Tech Sys (06/2025 – 08/2025)
    - Refactored index metrics and query operations to improve page speed by 30%.
    - Built custom reusable interactive React interface elements and AI wrappers.
    - Collaborated closely in Scrum cycles on full-stack web architectures.
@@ -57,17 +57,17 @@ TREASURE PROJECTS
 ------------------------------------------------------------------------
 1. AI Sign Language Translator
    Real-time Computer Vision tool tracking hand gesture classification.
-   GitHub: https://github.com/jenilavoonna/ai-sign-language-translator
+   GitHub: https://github.com/Jenila-2006/ai-sign-language-translator
    Tech Stack: Python, OpenCV, Machine Learning, MediaPipe
 
 2. Career Recommendation Platform
    Predictive models mapping students to government exams and career roads.
-   GitHub: https://github.com/jenilavoonna/career-recommendation-platform
+   GitHub: https://github.com/Jenila-2006/career-recommendation-platform
    Tech Stack: React, Python, Machine Learning, Tailwind CSS
 
 3. Academic Toolbox
    Central resource sharing app with Spring Boot backend.
-   GitHub: https://github.com/jenilavoonna/academic-toolbox
+   GitHub: https://github.com/Jenila-2006/academic-toolbox
    Tech Stack: Java, Spring Boot, React, MySQL
 
 ------------------------------------------------------------------------
@@ -243,7 +243,7 @@ Let's build a wave of innovation. Contact: jenilavoonna@gmail.com
             <p>Computer Science & Artificial Intelligence Student</p>
             <div class="contact-info">
                 <span>📧 <a href="mailto:jenilavoonna@gmail.com">jenilavoonna@gmail.com</a></span>
-                <span>🔗 <a href="https://github.com/jenilavoonna" target="_blank">github.com/jenilavoonna</a></span>
+                <span>🔗 <a href="https://github.com/Jenila-2006" target="_blank">github.com/Jenila-2006</a></span>
                 <span>📍 Operational Base: 12°N Latitude</span>
             </div>
         </div>
@@ -288,9 +288,9 @@ Let's build a wave of innovation. Contact: jenilavoonna@gmail.com
             <div class="job">
                 <div class="job-header">
                     <span>AI / ML Intern</span>
-                    <span style="color: #6b7280; font-size: 14px;">2025 - Present</span>
+                    <span style="color: #6b7280; font-size: 14px;">05/2025 – 07/2025</span>
                 </div>
-                <div class="job-sub">Artificial Intelligence Research Lab</div>
+                <div class="job-sub">Datavalley</div>
                 <ul class="bullets">
                     <li>Trained high-accuracy sequence classification models on temporal landmarks datasets.</li>
                     <li>Refined Computer Vision hand tracking models and gesture analyses frames.</li>
@@ -301,7 +301,7 @@ Let's build a wave of innovation. Contact: jenilavoonna@gmail.com
             <div class="job">
                 <div class="job-header">
                     <span>AI/ML Intern</span>
-                    <span style="color: #6b7280; font-size: 14px;">Summer 2024</span>
+                    <span style="color: #6b7280; font-size: 14px;">06/2025 – 08/2025</span>
                 </div>
                 <div class="job-sub">NDV Tech Sys</div>
                 <ul class="bullets">
@@ -425,10 +425,8 @@ Let's build a wave of innovation. Contact: jenilavoonna@gmail.com
               <span className="font-mono text-gray-400 text-sm md:text-base">Target Operations:</span>
               <TypingText
                 phrases={[
-                  'AI Developer',
-                  'Machine Learning Enthusiast',
-                  'Java Developer',
-                  'Problem Solver',
+                  'ML Development',
+                  'Web Development',
                 ]}
               />
             </div>

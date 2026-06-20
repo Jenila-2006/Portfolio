@@ -57,7 +57,7 @@ export default function ContactSection() {
             <div className="flex items-center justify-center lg:justify-start gap-4">
               <a
                 id="social-github-link"
-                href="https://github.com/jenilavoonna"
+                href="https://github.com/Jenila-2006"
                 target="_blank"
                 rel="noreferrer"
                 className="p-3 rounded-xl bg-white/5 border border-white/10 text-gray-300 hover:text-[#00f2fe] hover:border-[#00f2fe]/40 hover:bg-[#00f2fe]/5 hover:shadow-[0_0_12px_rgba(0,242,254,0.2)] transition-all duration-300"
@@ -66,7 +66,7 @@ export default function ContactSection() {
               </a>
               <a
                 id="social-linkedin-link"
-                href="https://linkedin.com/in/voonna-jenila"
+                href="https://www.linkedin.com/in/jenila-voonna-7251482b8/"
                 target="_blank"
                 rel="noreferrer"
                 className="p-3 rounded-xl bg-white/5 border border-white/10 text-gray-300 hover:text-[#00f2fe] hover:border-[#00f2fe]/40 hover:bg-[#00f2fe]/5 hover:shadow-[0_0_12px_rgba(0,242,254,0.2)] transition-all duration-300"
